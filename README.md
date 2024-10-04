@@ -1,6 +1,6 @@
 # Arch-install
 
-# This guide is for efi only
+# This guide is for efi mode only
 
 Connect internet
 
