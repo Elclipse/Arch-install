@@ -4,13 +4,13 @@
 
 Connecting to the internet
 
-  ethernet
+  For ethernet
   
 ```
 ip link
 ```
 
-  wifi
+  For wifi
 
 ```
 iwctl
@@ -37,7 +37,7 @@ new > 1G - 4G > enter
 ```
 new > enter
 ```
-Write partition
+  Then Write partition
 ```
 choose write > type yes > enter > quit
 ```
