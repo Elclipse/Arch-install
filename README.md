@@ -114,6 +114,11 @@ grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+Enable network
+```
+systemctl enable NetworkManager
+```
+
 Reboot the system
 ```
 exit
