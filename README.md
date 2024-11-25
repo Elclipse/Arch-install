@@ -7,7 +7,7 @@ Connecting to the internet
   For ethernet
   
 ```
-ip link
+Auto connect
 ```
 
   For wifi
