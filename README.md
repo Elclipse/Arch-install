@@ -75,6 +75,7 @@ arch-chroot /mnt
 Setting timezone
 ```
 ln -sf /usr/share/zoneinfo/your region/your city /etc/localtime
+use date check if time is correct and then syncing timezone
 hwclock --systohc | this will sync your timezone
 ```
 
