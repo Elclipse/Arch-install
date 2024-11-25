@@ -27,11 +27,13 @@ cfdisk > choose gpt
 ```
   First creat a boot partition 
 ```
-new > 100M > enter
+for BIOS is: 10MB
+for efi is: 500MB
+new > 10MB or 500MB> enter
 ```
   Second creat a swap partition (shound add at least 1GB for swap) (recommend 4GB for swap)
 ```
-new > 1G - 4G > enter
+new > XG/MB > enter | X is the amount of Gib or MB you want to use for swap
 ```
   Third creat main partition
 ```
