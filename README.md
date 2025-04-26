@@ -128,3 +128,19 @@ exit
 umount -a | check if all the partition are working
 rebott
 ```
+
+Enable wifi after installation
+```
+nmcli device wifi list | will list the available wifi networks
+
+nmcli device wifi connect SSID or BSSID password | to connect to a specific wifi networks
+```
+
+Install desktop environment
+  for this tutorial. I will use jakoolit arch hyprland script
+```
+git clone --depth=1 https://github.com/JaKooLit/Arch-Hyprland.git ~/Arch-Hyprland
+cd ~/Arch-Hyprland
+chmod +x install.sh
+./install.sh
+```
