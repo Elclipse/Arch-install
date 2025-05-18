@@ -144,3 +144,10 @@ cd ~/Arch-Hyprland
 chmod +x install.sh
 ./install.sh
 ```
+
+Install unikey 
+```
+sudo pacman -S fcitx5 fcitx5-qt fcitx5-unikey kcm-fcitx5
+ > go to hyprland conf file
+type comment "exec fcitx5"  > save
+```
