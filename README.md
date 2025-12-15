@@ -136,13 +136,25 @@ nmcli device wifi list | will list the available wifi networks
 nmcli device wifi connect SSID or BSSID password | to connect to a specific wifi networks
 ```
 
-Install desktop environment
-  for this tutorial. I will use jakoolit arch hyprland script
+Install desktop environment:
+  Jakoolit arch hyprland script
 ```
 git clone --depth=1 https://github.com/JaKooLit/Arch-Hyprland.git ~/Arch-Hyprland
 cd ~/Arch-Hyprland
 chmod +x install.sh
 ./install.sh
+```
+  Xfce4
+```
+sudo pacman -S xfce4 xfce4-goodies
+sudo pacman -S lightdm lightdm-gtk-greeter
+sudo systemctl enable lightdm.service
+```
+  KDE Plasma
+```
+sudo pacman -S plasma
+sudo pacman -S sddm
+sudo systemctl enable sddm
 ```
 
 Install unikey 
