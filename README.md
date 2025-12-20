@@ -61,14 +61,20 @@ swapon /dev/sda2
 
 Install basic packages
 ```
-pacstrap /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr nano networkmanager fuse ntfs-3g
+pacstrap /mnt base linux linux-firmware sof-firmware base-devel grub limine efibootmgr nano networkmanager fuse ntfs-3g
 ```
 add fuse and ntfs-3g if you need to mount ntfs drive
+add grub or limine that you prefer to
 
 Mount nfts drive if you have storage device on windows
 ```
 mkdir /mnt/ntfs
 mount -t ntfs-3g /dev/sdb2 /mnt/ntfs
+```
+if you want manual after installed:
+```
+# /dev/sda2
+UUID=487CC1EA7CC1D2BC  /mnt/ntfs  ntfs  default  0 0
 ```
 
 Generate fstab
@@ -119,6 +125,7 @@ fine line "%wheel ALL=(ALL) ALL" at the bottom > delete "#" > press CTRL+S to sa
 ```
 
 Creating bootloader
+If you like grub
 ```
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
