@@ -61,7 +61,14 @@ swapon /dev/sda2
 
 Install basic packages
 ```
-pacstrap /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr nano networkmanager
+pacstrap /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr nano networkmanager fuse ntfs-3g
+```
+add fuse and ntfs-3g if you need to mount ntfs drive
+
+Mount nfts drive if you have storage device on windows
+```
+mkdir /mnt/ntfs
+mount -t ntfs-3g /dev/sdb2 /mnt/ntfs
 ```
 
 Generate fstab
